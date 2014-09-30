@@ -19,6 +19,7 @@ class Calculatrice {
 	
 	public static function diviser($a, $b)
 	{
+		if ($b == 0) throw new Exception('Impossible de diviser un nombre par 0 !!!');
 		return ($a/$b);
 	}
 
