@@ -14,6 +14,7 @@ class CalculatriceScientifique extends Calculatrice {
 	
 	public static function racineCarre($a)
 	{
+		if(!estPositif($a)) throw new Exception('Impossible de calculer la racine carre d\'un nombre négatif !!!');
 		return sqrt($a);
 	}
 	
